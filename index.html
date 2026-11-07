@@ -95,7 +95,7 @@
       </div>
       <div class="why-right">
         <div>
-          <img src="./Assets/link-2.svg" alt="" />
+          <img src="./Assets/link-2.svg" alt="" class="icons" />
           <h5>URL Shortening</h5>
           <p>
             Scissor allows you to shorten URLs of your business, events. Shorten
@@ -103,7 +103,7 @@
           </p>
         </div>
         <div>
-          <img src="./Assets/edit.svg" alt="" />
+          <img src="./Assets/edit.svg" alt="" class="icons" />
           <h5>Custom URLs</h5>
           <p>
             With Scissor, you can create custom URLs, with the length you want!
@@ -111,7 +111,7 @@
           </p>
         </div>
         <div>
-          <img src="./Assets/grid.svg" alt="" />
+          <img src="./Assets/grid.svg" alt="" class="icons" />
           <h5>QR Codes</h5>
           <p>
             Generate QR codes to your business, events. Bring your audience and
@@ -119,7 +119,7 @@
           </p>
         </div>
         <div>
-          <img src="./Assets/activity.svg" alt="" />
+          <img src="./Assets/activity.svg" alt="" class="icons" />
           <h5>Data Analytics</h5>
           <p>
             Receive data on the usage of either your shortened URL, custom URLs
@@ -226,17 +226,27 @@
       <img src="./Assets/form-wave.svg" alt="" class="form-wave two-wave" />
       <div class="form-card">
         <form action="">
-          <input type="text" placeholder="Paste URL here..." />
+          <input class="paste" type="text" placeholder="Paste URL here..." />
           <div class="input-row">
             <div class="select-wrap">
               <select name="" id="">
                 <option value="" disabled selected>Choose Domain</option>
               </select>
-              <img src="./Assets/dropdown.svg" alt="" />
+              <img
+                class="dropdown-icon"
+                src="./Assets/dropdown-blue.svg"
+                alt=""
+              />
             </div>
-            <input type="text" placeholder="Type Alias here" />
+            <input
+              class="input-half"
+              type="text"
+              placeholder="Type Alias here"
+            />
           </div>
-          <button>Trim URL <img src="./Assets/magic wand.svg" alt="" /></button>
+          <button class="trim-btn">
+            Trim URL <img src="./Assets/magic wand.svg" alt="" />
+          </button>
           <p>
             By clicking TrimURL, I agree to the
             <span>Terms of Service, Privacy Policy</span> and Use of Cookies.
@@ -246,108 +256,114 @@
     </div>
 
     <!-- sixth-container -->
-    <div class="sixth-container">
-      <div>
-        <h2><span class="line"></span>FAQs</h2>
+    <div class="faq-images">
+      <img src="./Assets/faq-wave.svg" alt="" class="faq-wave one-wave" />
+      <img src="./Assets/faq-wave2.svg" alt="" class="faq-wave two-wave" />
+
+      <div class="sixth-container">
         <div>
-          <details open>
-            <summary>
-              How does URL shortening work?
-              <span class="icons">
-                <img src="./Assets/minus.svg" alt="minus" class="minus" />
-                <img src="./Assets/plus (1).svg" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p>
-              URL shortening works by taking a long URL and creating a shorter,
-              condensed version that redirects to the original URL. When a user
-              clicks on the shortened link, they are redirected to the intended
-              destination.
-            </p>
-          </details>
-          <details>
-            <summary>
-              Is it necessary to create an account to use the URL shortening
-              service?
-              <span class="icons">
-                <img src="" alt="minus" class="minus" />
-                <img src="" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p></p>
-          </details>
-          <details>
-            <summary>
-              Are the shortened links permanent? Will they expire?
-              <span class="icons">
-                <img src="" alt="minus" class="minus" />
-                <img src="" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p></p>
-          </details>
-          <details>
-            <summary>
-              Are there any limitations on the number of URLs I can shorten?
-              <span class="icons">
-                <img src="" alt="minus" class="minus" />
-                <img src="" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p></p>
-          </details>
-          <details>
-            <summary>
-              Can I customize the shortened URLs to reflect my brand or content?
-              <span class="icons">
-                <img src="" alt="minus" class="minus" />
-                <img src="" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p></p>
-          </details>
-          <details>
-            <summary>
-              Can I track the performance of my shortened URLs?
-              <span class="icons">
-                <img src="" alt="minus" class="minus" />
-                <img src="" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p></p>
-          </details>
-          <details>
-            <summary>
-              How secure is the URL shortening service? Are the shortened links
-              protected against spam or malicious activity?
-              <span class="icons">
-                <img src="" alt="minus" class="minus" />
-                <img src="" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p></p>
-          </details>
-          <details>
-            <summary>
-              What is a QR code and what can it do?
-              <span class="icons">
-                <img src="" alt="minus" class="minus" />
-                <img src="" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p></p>
-          </details>
-          <details>
-            <summary>
-              Is there an API available for integrating the URL shortening
-              service into my own applications or websites?
-              <span class="icons">
-                <img src="" alt="minus" class="minus" />
-                <img src="" alt="plus" class="plus" />
-              </span>
-            </summary>
-            <p></p>
-          </details>
+          <h2><span class="line"></span>FAQs</h2>
+          <div>
+            <details open>
+              <summary>
+                How does URL shortening work?
+                <span class="icons">
+                  <img src="./Assets/minus.svg" alt="minus" class="minus" />
+                  <img src="./Assets/plus (1).svg" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p>
+                URL shortening works by taking a long URL and creating a
+                shorter, condensed version that redirects to the original URL.
+                When a user clicks on the shortened link, they are redirected to
+                the intended destination.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Is it necessary to create an account to use the URL shortening
+                service?
+                <span class="icons">
+                  <img src="" alt="minus" class="minus" />
+                  <img src="" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p></p>
+            </details>
+            <details>
+              <summary>
+                Are the shortened links permanent? Will they expire?
+                <span class="icons">
+                  <img src="" alt="minus" class="minus" />
+                  <img src="" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p></p>
+            </details>
+            <details>
+              <summary>
+                Are there any limitations on the number of URLs I can shorten?
+                <span class="icons">
+                  <img src="" alt="minus" class="minus" />
+                  <img src="" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p></p>
+            </details>
+            <details>
+              <summary>
+                Can I customize the shortened URLs to reflect my brand or
+                content?
+                <span class="icons">
+                  <img src="" alt="minus" class="minus" />
+                  <img src="" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p></p>
+            </details>
+            <details>
+              <summary>
+                Can I track the performance of my shortened URLs?
+                <span class="icons">
+                  <img src="" alt="minus" class="minus" />
+                  <img src="" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p></p>
+            </details>
+            <details>
+              <summary>
+                How secure is the URL shortening service? Are the shortened
+                links protected against spam or malicious activity?
+                <span class="icons">
+                  <img src="" alt="minus" class="minus" />
+                  <img src="" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p></p>
+            </details>
+            <details>
+              <summary>
+                What is a QR code and what can it do?
+                <span class="icons">
+                  <img src="" alt="minus" class="minus" />
+                  <img src="" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p></p>
+            </details>
+            <details>
+              <summary>
+                Is there an API available for integrating the URL shortening
+                service into my own applications or websites?
+                <span class="icons">
+                  <img src="" alt="minus" class="minus" />
+                  <img src="" alt="plus" class="plus" />
+                </span>
+              </summary>
+              <p></p>
+            </details>
+          </div>
         </div>
       </div>
     </div>
@@ -364,6 +380,12 @@
 
     <!-- footer -->
     <footer>
+      <img src="./Assets/footer-wave.svg" alt="" class="footer-wave one-wave" />
+      <img
+        src="./Assets/footer-wave2.svg"
+        alt=""
+        class="footer-wave two-wave"
+      />
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="./Assets/Logo (1).svg" alt="" />

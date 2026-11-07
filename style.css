@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 15px;
 }
 
 .nav-links a {
@@ -39,6 +40,7 @@
   padding: 10px 10px;
   border-radius: 100px;
   width: 114px;
+  margin-right: 30px;
 }
 
 .first-container {
@@ -69,9 +71,6 @@
 
 /* second-container */
 .second-container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   position: relative;
   max-width: 560px;
   max-height: 340px;
@@ -93,12 +92,15 @@
   position: relative;
   z-index: 2;
   padding: 45px 20px 22px;
+  padding-left: 50px;
 }
 
 .link-hero p {
   margin: 22px 0 0;
   font-size: 16px;
   line-height: 1.7;
+  width: 380px;
+  margin-left: 150px;
   text-align: center;
 }
 
@@ -118,6 +120,7 @@
   gap: 50px;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 30px;
 }
 
 .left h4 {
@@ -155,6 +158,9 @@
   gap: 60px;
   justify-content: center;
   padding: 40px;
+  max-width: 1100px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .why-left {
@@ -168,12 +174,24 @@
   gap: 40px;
 }
 
+.why-right h5 {
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+
 .line {
   width: 5px;
   height: 25px;
   display: inline-block;
   background: linear-gradient(to top, #4d6b8800, #112232);
   margin-right: 10px;
+}
+
+.icons {
+  background-color: #3284ff21;
+
+  border-radius: 50%;
+  padding: 10px;
 }
 
 /* Fourth Container */
@@ -186,6 +204,15 @@
 
 .pricing-header .blue {
   color: #005ae2;
+}
+
+.pricing-header h3 {
+  margin-bottom: 10px;
+}
+
+.pricing-header p {
+  width: 550px;
+  line-height: 1.5;
 }
 
 .pricing-cards {
@@ -201,7 +228,6 @@
   border: 1px solid #005ae2;
   padding: 30px 25px;
   text-align: left;
-  width: 300px;
   border-radius: 10px;
 }
 
@@ -212,6 +238,25 @@
   z-index: 2;
   border-radius: 12px;
   border: none;
+  margin-left: -145px;
+  margin-right: -145px;
+}
+
+.card p {
+  margin: 20px 0;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 20px;
+}
+
+.card li img {
+  margin-right: 8px;
 }
 
 .pricing-btns {
@@ -269,7 +314,77 @@
   right: 0;
 }
 
+.paste {
+  width: 100%;
+  padding: 12px 15px;
+  border: 0.5px solid #3284ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #3284ff;
+}
+
+.paste::placeholder {
+  color: #3284ff;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.select-wrap,
+.input-half {
+  flex: 1;
+}
+
+.select-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-wrap select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #3284ff;
+  color: #3284ff;
+  border-radius: 8px;
+  appearance: none;
+}
+
+.dropdown-icon {
+  margin-left: -30px;
+}
+
+.input-half {
+  padding: 12px 15px;
+  border: 0.5px solid #3284ff;
+  border-radius: 8px;
+  color: #3284ff;
+}
+
+.input-half::placeholder {
+  color: #3284ff;
+}
+
+.trim-btn {
+  width: 100%;
+  margin: 15px 0px;
+  color: #ffffff;
+  padding: 10px 13px 13px;
+  background-color: #005ae2;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
 /* Sixth Container */
+.faq-images {
+  position: relative;
+  overflow: hidden;
+}
+
 .sixth-container {
   max-width: 800px;
   margin: 0 auto;
@@ -278,6 +393,14 @@
 
 .sixth-container h2 {
   text-align: center;
+}
+
+.faq-wave {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: auto;
+  top: 0;
 }
 
 /*Sevnth Container */
@@ -326,7 +449,16 @@
 
 /* Footer */
 footer {
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-wave {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: auto;
+  top: 0;
 }
 
 .footer-grid {
@@ -342,6 +474,7 @@ footer {
 
 .footer-item ul {
   list-style: none;
+  padding: 0;
 }
 
 summary::-webkit-details-marker {
